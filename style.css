@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@700&display=swap");
+
+/* Common Styles or Utilities */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.single-col {
+  width: 50%;
+  color: #3a3a3a;
+}
+.single-col a.submit span,
+.see-more span,
+.join-now span {
+  margin-left: 10px;
+}
+i {
+  color: black;
+}
+/* Start Header Styles */
+.banner-wrapper {
+  color: #3a3a3a;
+}
+.humberger-menu {
+  display: none;
+  font-size: 20px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.add-to-cart {
+  display: none;
+}
+
+/* End Header Styles */
+
+/* Start Banner Styles */
+.banner-title {
+  font-size: 52px;
+  font-weight: 700;
+}
+.single-col p {
+  margin-bottom: 40px;
+}
+.single-col a.submit {
+  text-decoration: none;
+  background: #e02c6d;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 41px;
+  margin-top: 20px;
+}
+
+.camera-img {
+  position: relative;
+}
+
+.circle-img {
+  position: absolute;
+}
+/* End Banner Styles */
+
+/* Start Company Styles */
+
+.company-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 80px 0;
+  padding: 30px 0;
+  border-top: 2px solid #aaaaaa50;
+  border-bottom: 2px solid #aaaaaa50;
+}
+
+/* End Company Styles */
+
+/* Start Collection Styles */
+.collection-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.collection-card {
+  padding: 25px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 5px #80808066;
+  border-radius: 5px;
+}
+.collection-heading {
+  display: flex;
+  justify-content: center;
+}
+.collection-card p {
+  color: #787885;
+}
+.collection-card .fa-star,
+.collection-card .fa-star-half-stroke {
+  color: #fb8200;
+}
+
+.see-more {
+  display: flex;
+  justify-content: right;
+  color: #e02c6d;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* End Collection Styles */
+
+/* Start Featured Products Styles */
+.featured-wrapper {
+  display: flex;
+  margin: 50px 0;
+}
+.featured-title {
+  color: #0a0826;
+}
+.join-now {
+  text-decoration: none;
+  background: #e02c6d;
+  padding: 10px 20px;
+  color: white;
+}
+/* End Featured Products Styles */
+
+/* Start Footer Styles */
+footer {
+  background-color: #0a0826;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+footer p {
+  font-weight: 400;
+}
+footer span i {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 15px;
+  font-size: 16px;
+}
+/* End Footer Styles */
+
+/* Media Query Styles */
+
+@media only screen and (max-width: 576px) {
+  /* Header Part  */
+  .menubar {
+    display: none;
+  }
+  .humberger-menu,
+  .add-to-cart {
+    display: block;
+  }
+
+  /* banner Part  */
+  .banner-wrapper,
+  .featured-wrapper {
+    flex-direction: column-reverse;
+  }
+  .single-col {
+    width: 100%;
+  }
+
+  .banner-content,
+  .featured-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .camera-img,
+  .circle-img {
+    width: 95%;
+  }
+  /* Collection Section  */
+  .collection-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured-img img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  /* Header Part  */
+  .menubar {
+    display: none;
+  }
+  .humberger-menu,
+  .add-to-cart {
+    display: block;
+  }
+  /* banner Part  */
+  .banner-wrapper,
+  .featured-wrapper {
+    flex-direction: column;
+  }
+  .single-col {
+    width: 100%;
+  }
+
+  .banner-content,
+  .featured-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 42px;
+  }
+  .single-col.banner-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .camera-img,
+  .circle-img {
+    width: 80%;
+  }
+  
+  /* Collection Section  */
+  .collection-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Featured Section */
+  .single-col.featured-img img{
+    width: 100%;
+  }
+}
+
